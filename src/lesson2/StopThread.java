@@ -1,7 +1,7 @@
 package lesson2;
 
 /**
- * 描述：     TODO
+ * 描述：     普通的中断线程
  */
 public class StopThread implements Runnable {
 

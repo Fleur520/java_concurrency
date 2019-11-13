@@ -1,7 +1,7 @@
 package lesson1;
 
 /**
- * 描述：     TODO
+ * 描述：     继承Thread类实现线程
  */
 public class ExtendsThread extends Thread {
 

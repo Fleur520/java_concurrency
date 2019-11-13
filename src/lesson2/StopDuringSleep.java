@@ -1,7 +1,7 @@
 package lesson2;
 
 /**
- * 描述：     TODO
+ * 描述：     sleep期间中断
  */
 public class StopDuringSleep {
 
@@ -20,7 +20,7 @@ public class StopDuringSleep {
         };
         Thread thread = new Thread(runnable);
         thread.start();
-        Thread.sleep(5000);
+        Thread.sleep(5);
         thread.interrupt();
     }
 }

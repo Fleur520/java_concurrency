@@ -1,7 +1,7 @@
 package lesson1;
 
 /**
- * 描述：     TODO
+ * 描述：     实现Runnable接口实现线程
  */
 public class RunnableThread implements Runnable {
 

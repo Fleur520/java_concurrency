@@ -5,15 +5,16 @@ package lesson2;
  */
 public class VolatileCanStop implements Runnable {
 
+
     private volatile boolean canceled = false;
 
     @Override
     public void run() {
         int num = 0;
         try {
-            while (num <= 100000 && !canceled) {
-                if (num % 100 == 0) {
-                    System.out.println(num + "是100的倍数。");
+            while (!canceled && num <= 1000000) {
+                if (num % 10 == 0) {
+                    System.out.println(num + "是10的倍数。");
                 }
                 num++;
                 Thread.sleep(1);
@@ -27,7 +28,7 @@ public class VolatileCanStop implements Runnable {
         VolatileCanStop r = new VolatileCanStop();
         Thread thread = new Thread(r);
         thread.start();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         r.canceled = true;
     }
 }
