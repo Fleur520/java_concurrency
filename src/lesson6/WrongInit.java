@@ -1,7 +1,14 @@
 package lesson6;
 
+import java.util.AbstractMap;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
+import javafx.beans.binding.When;
+import sun.jvm.hotspot.opto.Block;
 
 /**
  * 描述：     错误的发布
@@ -30,6 +37,5 @@ public class WrongInit {
     public static void main(String[] args) throws InterruptedException {
         WrongInit multiThreadsError6 = new WrongInit();
         System.out.println(multiThreadsError6.getStudents().get(1));
-
     }
 }
